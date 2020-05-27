@@ -317,9 +317,6 @@ call print_string
 ret
 
 paintbg2:
-mov ax,0xc200
-mov bh,0
-int 15h
 mov byte [buttonornot],1
 mov ax,0
 mov bx,0
@@ -328,9 +325,6 @@ mov dx,480
 mov byte [Color],0fh
 call drawbutton
 mov byte [buttonornot],0
-mov ax,0xc200
-mov bh,1
-int 15h
 ret
 
 

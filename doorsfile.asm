@@ -84,7 +84,7 @@ mov ds,ax
 mov es,ax
 mov cl,byte [controlSet]
 add sp,4
-jmp 2000h:401bh
+jmp 2000h:401dh
 
 keystep db 0
 fat12fn2 times 14 db 0
